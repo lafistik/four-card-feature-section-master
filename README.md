@@ -19,9 +19,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./four-card-feature-section-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/lafistik/four-card-feature-section-master]
+- Live Site URL: [https://lafistik.github.com/four-card-feature-section-master/]

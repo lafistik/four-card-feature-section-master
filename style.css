@@ -1,0 +1,152 @@
+:root {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+
+  --clr-ddkblue: hsl(234, 12%, 34%);
+  --clr-grayblue: hsl(229, 6%, 66%);
+  --clr-lightgray: hsl(0, 0%, 98%);
+
+  --fs-regular: 0.9375rem;
+  --ff-regular: "Poppins", sans-serif;
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--ff-regular);
+  font-size: var(--fs-regular);
+  background-color: var(--clr-lightgray);
+  color: var(--clr-grayblue);
+  padding: 4rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+}
+
+/* General styles */
+
+.section__features {
+  width: 100%;
+  max-width: 19.4375rem;
+}
+
+.features-title,
+.card-title {
+  color: var(--clr-ddkblue);
+}
+
+.features-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.125rem;
+}
+
+.features-description {
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 4.75rem;
+}
+
+.features-cards {
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.75rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.8125rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.card img {
+  margin-left: auto;
+}
+
+/* Helper classes */
+
+.fw-200 {
+  font-weight: var(--fw-200);
+}
+
+.border-red {
+  border-top: 3px solid var(--clr-red);
+}
+
+.border-cyan {
+  border-top: 3px solid var(--clr-cyan);
+}
+
+.border-orange {
+  border-top: 3px solid var(--clr-orange);
+}
+
+.border-blue {
+  border-top: 3px solid var(--clr-blue);
+}
+
+@media (min-width: 70em) {
+  .section__features {
+    max-width: 69.375rem;
+  }
+
+  .features-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+  }
+
+  .card {
+    width: 21.875rem;
+    height: 15.625rem;
+  }
+
+  .border-cyan {
+    grid-row: 1 / -1;
+  }
+
+  .border-blue {
+    grid-row: 1 / -1;
+    grid-column: 3 / 4;
+  }
+
+  /* HELPER CLASS */
+
+  .features-title,
+  .features-description {
+    max-width: 31.875rem;
+    margin-inline: auto;
+  }
+
+  .features-title {
+    font-size: 2rem;
+  }
+}
