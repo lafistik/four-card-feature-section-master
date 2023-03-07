@@ -24,4 +24,4 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/lafistik/four-card-feature-section-master]
-- Live Site URL: [https://lafistik.github.com/four-card-feature-section-master/]
+- Live Site URL: [https://lafistik.github.io/four-card-feature-section-master/]
